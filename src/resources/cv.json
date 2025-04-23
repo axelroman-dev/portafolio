@@ -1,0 +1,30 @@
+{
+  "basics": {
+    "name": "Axel Román",
+    "summary": "Ingeniero en sistemas con +5 años de experiencia en desarrollo de aplicaciones móviles y backend. Me encanta encontrar soluciones creativas y eficientes para mis clientes."
+  },
+  "projects": [
+    {
+      "title": "Clínica Dental Dual",
+      "description": "Desarrollo de aplicación móvil para la gestión pacientes, inventarios, reportes, etc.",
+      "link": null,
+      "github": null,
+      "image": null,
+      "tags": ["Flutter", "Dart", "Firebase"]
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Desarrollador Full Stack",
+      "company": "Freelance",
+      "description": "Desarrollo de aplicaciones web y móviles utilizando tecnologías como Vue, Flutter, NestJS, Firebase, PostgreSQL, AWS y Docker.",
+      "date": "2024 - Actualmente"
+    },
+    {
+      "title": "Director de desarrollo de aplicaciones móviles",
+      "company": "NetRabbit",
+      "description": "Responsable de un equipo de 3 desarrolladores móviles. Desarrollando de aplicaciones para clientes del Gobierno de México y otros privados. Utilizando tecnologías como Flutter, Firebase, PostgreSQL, AWS y Docker.",
+      "date": "2021 - 2024"
+    }
+  ]
+}

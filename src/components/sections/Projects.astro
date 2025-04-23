@@ -1,22 +1,18 @@
 ---
-import LinkIcon from "./icons/LinkIcon.astro";
+import AppsIcon from "../icons/AppsIcon.astro";
+import LinkIcon from "../icons/LinkIcon.astro";
+import Section from "../Section.astro";
 
-const PROJECTS = [
-  {
-    title: "Clínica Dental Dual",
-    description:
-      "Desarrollo de aplicación móvil para la gestión pacientes, inventarios, reportes, etc.",
-    link: null,
-    github: null,
-    image: null,
-    tags: ["Flutter", "Dart", "Firebase"],
-  },
-];
+import { projects } from "../../resources/cv.json";
 ---
 
-{
-  PROJECTS.map(({ title, description, tags, image, link }) => {
-    return (
+<Section id="projects" class="pb-20 lg:pb-30">
+  <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+    <AppsIcon class="size-6" />
+    Proyectos
+  </h2>
+  {
+    projects.map(({ title, description, tags, image, link }) => {
       <article class="flex flex-col rounded-lg border border-white/5 p-4 lg:px-6 lg:py-4">
         <h3 class="flex items-center text-2xl font-semibold text-white mb-3 gap-4 group">
           {image && (
@@ -37,7 +33,7 @@ const PROJECTS = [
             <li class="bg-white/10 rounded-full px-3 py-1 text-sm">{tag}</li>
           ))}
         </ul>
-      </article>
-    );
-  })
-}
+      </article>;
+    })
+  }
+</Section>

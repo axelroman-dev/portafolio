@@ -1,8 +1,13 @@
 ---
-import Badge from "../components/Badge.astro";
+import Badge from "../Badge.astro";
+
+import { basics } from "../../resources/cv.json";
+import Section from "../Section.astro";
+
+const { name, summary } = basics;
 ---
 
-<section>
+<Section class="py-30 lg:py-50 pb-20">
   <div class="flex sm:flex-row items-center gap-4">
     <img
       class="rounded-full size-30 mb-5"
@@ -16,13 +21,11 @@ import Badge from "../components/Badge.astro";
       >
         <Badge>Disponible para trabajar</Badge>
       </a>
-      Soy Axel Román 👋
+      Soy {name} 👋
     </h1>
   </div>
 
   <h2 class="text-xl lg:text-xl opacity-80 text-pretty">
-    Ingeniero en sistemas con +5 años de experiencia en desarrollo de
-    aplicaciones móviles y backend. Me encanta encontrar soluciones creativas y
-    eficientes para mis clientes.
+    {summary}
   </h2>
-</section>
+</Section>

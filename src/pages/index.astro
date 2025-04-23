@@ -1,7 +1,36 @@
 ---
+import Experiences from "../components/Experiences.astro";
+import AppsIcon from "../components/icons/AppsIcon.astro";
+import BriefcaseIcon from "../components/icons/BriefcaseIcon.astro";
+import Projects from "../components/Projects.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Summary from "../components/Summary.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Portafolio">
-  <h1>Hello World</h1>
+<Layout
+  title="Portafolio de Axel Roman"
+  description="Contratarme para tus proyectos mobile y backend."
+>
+  <main class="px-4 lg:px-6">
+    <SectionContainer class="py-30 lg:py-50 pb-20">
+      <Summary />
+    </SectionContainer>
+
+    <!-- <SectionContainer id="projects" class="pb-20 lg:pb-30">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <AppsIcon class="size-6" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer> -->
+
+    <SectionContainer id="experience" class="pb-30">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <BriefcaseIcon class="size-6" />
+        Experiencia
+      </h2>
+      <Experiences />
+    </SectionContainer>
+  </main>
 </Layout>
